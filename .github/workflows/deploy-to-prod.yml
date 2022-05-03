@@ -1,0 +1,56 @@
+name:  CI deploy prod
+
+on:
+   workflow_dispatch:
+
+env:
+  AZURE_WEBAPP_NAME: htg-prod-voucher-reconciliation-app
+  REGISTRY_LOGIN_SERVER: htgprodregistry.azurecr.io
+
+jobs:
+   build-prod:
+    if: github.actor == 'JamesChristianson' || github.actor == 'emailtokvk'
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 5.0.x
+    - name: Restore dependencies
+      run: dotnet restore
+    - name: Build
+      run: dotnet build --no-restore
+    - name: Test
+      run: dotnet test --no-build --verbosity normal
+
+   deploy-prod:
+        needs: build-prod
+        runs-on: ubuntu-latest
+        steps:
+        # checkout the repo
+        - name: 'Checkout GitHub Action'
+          uses: actions/checkout@main
+          
+        - name: 'Login via Azure CLI'
+          uses: azure/login@v1
+          with:
+            creds: ${{ secrets.AZURE_PROD_CREDENTIALS }}
+        
+        - name: 'Build and push image'
+          uses: azure/docker-login@v1
+          with:
+            login-server: ${{ env.REGISTRY_LOGIN_SERVER }}
+            username: ${{ secrets.REGISTRY_PROD_USERNAME }}
+            password: ${{ secrets.REGISTRY_PROD_PASSWORD }}
+        - run: |
+            docker build . -t ${{ env.REGISTRY_LOGIN_SERVER }}/${{ env.AZURE_WEBAPP_NAME }}:${{ github.sha }} -t ${{ env.REGISTRY_LOGIN_SERVER }}/${{ env.AZURE_WEBAPP_NAME }}:latest --file Beis.HelpToGrow.Voucher.Api.Reconciliation/Dockerfile
+            docker push ${{ env.REGISTRY_LOGIN_SERVER }}/${{ env.AZURE_WEBAPP_NAME }} --all-tags
+        - name: 'Deploy to App Service'
+          uses: azure/webapps-deploy@v2
+          with:
+            app-name: '${{ env.AZURE_WEBAPP_NAME }}'
+            images: '${{ env.REGISTRY_LOGIN_SERVER }}/${{ env.AZURE_WEBAPP_NAME }}:${{ github.sha }}'
+        - name: Azure logout
+          run: |
+            az logout

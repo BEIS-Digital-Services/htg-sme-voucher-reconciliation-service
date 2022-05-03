@@ -1,0 +1,34 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: beis-htg-sme-voucher-chek-service
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: beis-htg-sme-voucher-chek-service
+    spec:
+      containers:
+        - name: beis-htg-sme-voucher-chek-service
+          image: proxytechnology/mymicroservice:latest
+          ports:
+            - containerPort: 80
+          env:
+            - name: ASPNETCORE_URLS
+              value: http://*:80  
+  selector:
+    matchLabels:
+      app: beis-htg-sme-voucher-chek-service
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: beis-htg-sme-voucher-chek-service
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 80
+  selector:
+    app: beis-htg-sme-voucher-chek-service   

@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+
+        <IsPackable>false</IsPackable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="AutoFixture.Xunit2" Version="4.17.0" />
+        <PackageReference Include="FakeItEasy" Version="7.2.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="5.0.13" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.9.4" />
+        <PackageReference Include="MockQueryable.Moq" Version="5.0.1" />
+        <PackageReference Include="NUnit" Version="3.13.1" />
+        <PackageReference Include="NUnit3TestAdapter" Version="3.17.0" />
+        <PackageReference Include="coverlet.collector" Version="3.0.2" />
+        <PackageReference Include="Xbehave" Version="2.4.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Beis.HelpToGrow.Voucher.API.Reconciliation\Beis.HelpToGrow.Voucher.Api.Reconciliation.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="Beis.Htg.VendorSme.Database">
+        <HintPath>..\Beis.HelpToGrow.Voucher.API.Reconciliation\Library\Beis.Htg.VendorSme.Database.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+</Project>
