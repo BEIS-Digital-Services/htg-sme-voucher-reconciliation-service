@@ -7,7 +7,7 @@ on:
      - 'feature/**'
 
 env:
-  AZURE_WEBAPP_NAME: Beis.HelpToGrow.Voucher.API.Reconciliation
+  AZURE_WEBAPP_NAME: Beis.HelpToGrow.Voucher.Api.Reconciliation
   REGISTRY_LOGIN_SERVER: htgdevregistry.azurecr.io
 
 jobs:
