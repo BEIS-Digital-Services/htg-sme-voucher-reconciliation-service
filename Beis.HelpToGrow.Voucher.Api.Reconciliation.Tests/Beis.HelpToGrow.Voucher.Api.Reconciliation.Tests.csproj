@@ -19,12 +19,12 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Beis.HelpToGrow.Voucher.API.Reconciliation\Beis.HelpToGrow.Voucher.Api.Reconciliation.csproj" />
+      <ProjectReference Include="..\Beis.HelpToGrow.Voucher.Api.Reconciliation\Beis.HelpToGrow.Voucher.Api.Reconciliation.csproj" />
     </ItemGroup>
 
     <ItemGroup>
       <Reference Include="Beis.Htg.VendorSme.Database">
-        <HintPath>..\Beis.HelpToGrow.Voucher.API.Reconciliation\Library\Beis.Htg.VendorSme.Database.dll</HintPath>
+        <HintPath>..\Beis.HelpToGrow.Voucher.Api.Reconciliation\Library\Beis.Htg.VendorSme.Database.dll</HintPath>
       </Reference>
     </ItemGroup>
 
