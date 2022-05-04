@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using Microsoft.VisualBasic.CompilerServices;
 
-namespace Beis.HelpToGrow.Voucher.API.Reconciliation.Domain.Entities
+namespace Beis.HelpToGrow.Voucher.Api.Reconciliation.Domain.Entities
 {
     public class VoucherResponse
     {

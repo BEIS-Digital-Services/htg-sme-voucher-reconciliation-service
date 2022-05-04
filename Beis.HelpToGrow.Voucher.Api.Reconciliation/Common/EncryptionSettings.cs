@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Beis.HelpToGrow.Voucher.API.Reconciliation.Common
+namespace Beis.HelpToGrow.Voucher.Api.Reconciliation.Common
 {
     public class EncryptionSettings
     {

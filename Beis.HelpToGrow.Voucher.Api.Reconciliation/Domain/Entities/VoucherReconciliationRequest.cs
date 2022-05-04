@@ -1,6 +1,6 @@
 using System;
 
-namespace Beis.HelpToGrow.Voucher.API.Reconciliation.Domain.Entities
+namespace Beis.HelpToGrow.Voucher.Api.Reconciliation.Domain.Entities
 {
     public class VoucherReconciliationRequest
     {

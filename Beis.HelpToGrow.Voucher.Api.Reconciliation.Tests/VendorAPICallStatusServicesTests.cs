@@ -3,12 +3,12 @@ using Beis.Htg.VendorSme.Database.Models;
 using Moq;
 using System.Text.Json;
 using NUnit.Framework;
-using Beis.HelpToGrow.Voucher.API.Reconciliation.Domain.Entities;
-using Beis.HelpToGrow.Voucher.API.Reconciliation.Services;
-using Beis.HelpToGrow.Voucher.API.Reconciliation.Services.Interfaces;
+using Beis.HelpToGrow.Voucher.Api.Reconciliation.Domain.Entities;
+using Beis.HelpToGrow.Voucher.Api.Reconciliation.Services;
+using Beis.HelpToGrow.Voucher.Api.Reconciliation.Services.Interfaces;
 using System.Threading.Tasks;
 
-namespace Beis.HelpToGrow.Voucher.API.Reconciliation.Tests
+namespace Beis.HelpToGrow.Voucher.Api.Reconciliation.Tests
 {
     public class VendorAPICallStatusServicesTests
     {

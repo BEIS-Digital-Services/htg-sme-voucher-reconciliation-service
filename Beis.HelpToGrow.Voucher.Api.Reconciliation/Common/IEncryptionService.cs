@@ -1,4 +1,4 @@
-namespace Beis.HelpToGrow.Voucher.API.Reconciliation.Common
+namespace Beis.HelpToGrow.Voucher.Api.Reconciliation.Common
 {
     public interface IEncryptionService
     {

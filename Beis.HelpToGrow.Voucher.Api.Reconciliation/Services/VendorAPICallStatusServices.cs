@@ -1,11 +1,11 @@
 using System;
-using Beis.HelpToGrow.Voucher.API.Reconciliation.Services.Interfaces;
+using Beis.HelpToGrow.Voucher.Api.Reconciliation.Services.Interfaces;
 using System.Text.Json;
 using Beis.Htg.VendorSme.Database.Models;
-using Beis.HelpToGrow.Voucher.API.Reconciliation.Domain.Entities;
+using Beis.HelpToGrow.Voucher.Api.Reconciliation.Domain.Entities;
 using System.Threading.Tasks;
 
-namespace Beis.HelpToGrow.Voucher.API.Reconciliation.Services
+namespace Beis.HelpToGrow.Voucher.Api.Reconciliation.Services
 {
     public class VendorAPICallStatusServices: IVendorAPICallStatusServices
     {

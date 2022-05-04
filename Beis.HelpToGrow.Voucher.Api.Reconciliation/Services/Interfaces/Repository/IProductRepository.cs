@@ -1,7 +1,7 @@
 using Beis.Htg.VendorSme.Database.Models;
 using System.Threading.Tasks;
 
-namespace Beis.HelpToGrow.Voucher.API.Reconciliation.Services.Interfaces
+namespace Beis.HelpToGrow.Voucher.Api.Reconciliation.Services.Interfaces
 {
     public interface IProductRepository
     {

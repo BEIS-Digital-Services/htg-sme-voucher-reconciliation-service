@@ -3,7 +3,7 @@ using Moq;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Beis.HelpToGrow.Voucher.API.Reconciliation.Tests
+namespace Beis.HelpToGrow.Voucher.Api.Reconciliation.Tests
 {
     public static class DbSetExtensions
     {

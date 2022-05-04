@@ -3,9 +3,9 @@ using System;
 using System.IO;
 using System.Security.Cryptography;
 using System.Text;
-using Beis.HelpToGrow.Voucher.API.Reconciliation.Common;
+using Beis.HelpToGrow.Voucher.Api.Reconciliation.Common;
 
-namespace Beis.HelpToGrow.Voucher.API.Reconciliation.Common
+namespace Beis.HelpToGrow.Voucher.Api.Reconciliation.Common
 {
     public class AesEncryption: IEncryptionService
     {

@@ -1,9 +1,9 @@
 using Beis.Htg.VendorSme.Database;
 using Beis.Htg.VendorSme.Database.Models;
 using System.Linq;
-using Beis.HelpToGrow.Voucher.API.Reconciliation.Services.Interfaces;
+using Beis.HelpToGrow.Voucher.Api.Reconciliation.Services.Interfaces;
 
-namespace Beis.HelpToGrow.Voucher.API.Reconciliation.Services.Repositories
+namespace Beis.HelpToGrow.Voucher.Api.Reconciliation.Services.Repositories
 {
     public class TokenRepository: ITokenRepository
     {

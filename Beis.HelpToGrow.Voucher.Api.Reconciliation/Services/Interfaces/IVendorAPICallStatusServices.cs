@@ -1,8 +1,8 @@
 using Beis.Htg.VendorSme.Database.Models;
 using System.Threading.Tasks;
-using Beis.HelpToGrow.Voucher.API.Reconciliation.Domain.Entities;
+using Beis.HelpToGrow.Voucher.Api.Reconciliation.Domain.Entities;
 
-namespace Beis.HelpToGrow.Voucher.API.Reconciliation.Services.Interfaces
+namespace Beis.HelpToGrow.Voucher.Api.Reconciliation.Services.Interfaces
 {
     public interface IVendorAPICallStatusServices
     {

@@ -1,7 +1,7 @@
 ﻿using AutoFixture.Xunit2;
 using Xbehave;
 
-namespace Beis.HelpToGrow.Voucher.API.Reconciliation.Tests
+namespace Beis.HelpToGrow.Voucher.Api.Reconciliation.Tests
 {
     public class VoucherReconciliationFeature
     {

@@ -6,11 +6,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Moq;
 using NUnit.Framework;
-using Beis.HelpToGrow.Voucher.API.Reconciliation.Controllers;
-using Beis.HelpToGrow.Voucher.API.Reconciliation.Domain.Entities;
-using Beis.HelpToGrow.Voucher.API.Reconciliation.Services.Interfaces;
+using Beis.HelpToGrow.Voucher.Api.Reconciliation.Controllers;
+using Beis.HelpToGrow.Voucher.Api.Reconciliation.Domain.Entities;
+using Beis.HelpToGrow.Voucher.Api.Reconciliation.Services.Interfaces;
 
-namespace Beis.HelpToGrow.Voucher.API.Reconciliation.Tests
+namespace Beis.HelpToGrow.Voucher.Api.Reconciliation.Tests
 {
     [TestFixture]
     public class VoucherControllerTests

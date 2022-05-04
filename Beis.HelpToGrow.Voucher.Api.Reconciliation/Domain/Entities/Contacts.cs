@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 
-namespace Beis.HelpToGrow.Voucher.API.Reconciliation.Domain.Entities
+namespace Beis.HelpToGrow.Voucher.Api.Reconciliation.Domain.Entities
 {
     [Table("Contacts", Schema = "dbo")]
     public class Contacts

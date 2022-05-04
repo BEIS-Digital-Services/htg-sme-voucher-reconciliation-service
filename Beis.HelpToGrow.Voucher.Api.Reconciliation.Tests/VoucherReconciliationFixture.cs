@@ -7,19 +7,19 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using MockQueryable.Moq;
 using Moq;
-using Beis.HelpToGrow.Voucher.API.Reconciliation.Common;
+using Beis.HelpToGrow.Voucher.Api.Reconciliation.Common;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Beis.HelpToGrow.Voucher.API.Reconciliation.Controllers;
-using Beis.HelpToGrow.Voucher.API.Reconciliation.Domain.Entities;
-using Beis.HelpToGrow.Voucher.API.Reconciliation.Services;
-using Beis.HelpToGrow.Voucher.API.Reconciliation.Services.Interfaces;
-using Beis.HelpToGrow.Voucher.API.Reconciliation.Services.Repositories;
+using Beis.HelpToGrow.Voucher.Api.Reconciliation.Controllers;
+using Beis.HelpToGrow.Voucher.Api.Reconciliation.Domain.Entities;
+using Beis.HelpToGrow.Voucher.Api.Reconciliation.Services;
+using Beis.HelpToGrow.Voucher.Api.Reconciliation.Services.Interfaces;
+using Beis.HelpToGrow.Voucher.Api.Reconciliation.Services.Repositories;
 using Xunit;
 
-namespace Beis.HelpToGrow.Voucher.API.Reconciliation.Tests
+namespace Beis.HelpToGrow.Voucher.Api.Reconciliation.Tests
 {
     public class VoucherReconciliationFixture
     {

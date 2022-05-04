@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace Beis.HelpToGrow.Voucher.API.Reconciliation
+namespace Beis.HelpToGrow.Voucher.Api.Reconciliation
 {
     public class Program
     {

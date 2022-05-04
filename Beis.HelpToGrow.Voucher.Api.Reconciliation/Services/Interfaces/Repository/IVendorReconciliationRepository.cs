@@ -1,6 +1,6 @@
 using Beis.Htg.VendorSme.Database.Models;
 
-namespace Beis.HelpToGrow.Voucher.API.Reconciliation.Services.Interfaces
+namespace Beis.HelpToGrow.Voucher.Api.Reconciliation.Services.Interfaces
 {
     public interface IVendorReconciliationRepository
     {

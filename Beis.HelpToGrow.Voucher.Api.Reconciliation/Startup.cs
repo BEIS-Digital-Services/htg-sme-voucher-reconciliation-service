@@ -6,19 +6,19 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
-using Beis.HelpToGrow.Voucher.API.Reconciliation.Common;
+using Beis.HelpToGrow.Voucher.Api.Reconciliation.Common;
 using System;
 using System.IO;
 using System.Reflection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.ApplicationInsights;
-using Beis.HelpToGrow.Voucher.API.Reconciliation.Services;
-using Beis.HelpToGrow.Voucher.API.Reconciliation.Services;
-using Beis.HelpToGrow.Voucher.API.Reconciliation.Services.Repositories;
-using Beis.HelpToGrow.Voucher.API.Reconciliation.Common;
-using Beis.HelpToGrow.Voucher.API.Reconciliation.Services.Interfaces;
+using Beis.HelpToGrow.Voucher.Api.Reconciliation.Services;
+using Beis.HelpToGrow.Voucher.Api.Reconciliation.Services;
+using Beis.HelpToGrow.Voucher.Api.Reconciliation.Services.Repositories;
+using Beis.HelpToGrow.Voucher.Api.Reconciliation.Common;
+using Beis.HelpToGrow.Voucher.Api.Reconciliation.Services.Interfaces;
 
-namespace Beis.HelpToGrow.Voucher.API.Reconciliation
+namespace Beis.HelpToGrow.Voucher.Api.Reconciliation
 {
     public class Startup
     {

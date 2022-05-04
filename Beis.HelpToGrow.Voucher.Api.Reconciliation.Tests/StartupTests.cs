@@ -2,14 +2,14 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.Extensions.DependencyInjection;
 using NUnit.Framework;
-using Beis.HelpToGrow.Voucher.API.Reconciliation.Common;
+using Beis.HelpToGrow.Voucher.Api.Reconciliation.Common;
 using Swashbuckle.AspNetCore.Swagger;
 using System;
-using Beis.HelpToGrow.Voucher.API.Reconciliation;
-using Beis.HelpToGrow.Voucher.API.Reconciliation.Services;
-using Beis.HelpToGrow.Voucher.API.Reconciliation.Services.Interfaces;
+using Beis.HelpToGrow.Voucher.Api.Reconciliation;
+using Beis.HelpToGrow.Voucher.Api.Reconciliation.Services;
+using Beis.HelpToGrow.Voucher.Api.Reconciliation.Services.Interfaces;
 
-namespace Beis.HelpToGrow.Voucher.API.Reconciliation.Tests
+namespace Beis.HelpToGrow.Voucher.Api.Reconciliation.Tests
 {
     [TestFixture]
     public class StartupTests

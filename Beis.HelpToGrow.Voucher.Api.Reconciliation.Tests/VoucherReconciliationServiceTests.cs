@@ -2,15 +2,15 @@ using Beis.Htg.VendorSme.Database.Models;
 using Microsoft.Extensions.Logging;
 using Moq;
 using NUnit.Framework;
-using Beis.HelpToGrow.Voucher.API.Reconciliation.Common;
+using Beis.HelpToGrow.Voucher.Api.Reconciliation.Common;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Beis.HelpToGrow.Voucher.API.Reconciliation.Domain.Entities;
-using Beis.HelpToGrow.Voucher.API.Reconciliation.Services;
-using Beis.HelpToGrow.Voucher.API.Reconciliation.Services.Interfaces;
+using Beis.HelpToGrow.Voucher.Api.Reconciliation.Domain.Entities;
+using Beis.HelpToGrow.Voucher.Api.Reconciliation.Services;
+using Beis.HelpToGrow.Voucher.Api.Reconciliation.Services.Interfaces;
 
-namespace Beis.HelpToGrow.Voucher.API.Reconciliation.Tests
+namespace Beis.HelpToGrow.Voucher.Api.Reconciliation.Tests
 {
     [TestFixture]
     public class VoucherReconciliationServiceTests

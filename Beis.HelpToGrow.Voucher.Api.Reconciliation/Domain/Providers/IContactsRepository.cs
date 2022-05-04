@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using Beis.HelpToGrow.Voucher.API.Reconciliation.Domain.Entities;
+using Beis.HelpToGrow.Voucher.Api.Reconciliation.Domain.Entities;
 
-namespace Beis.HelpToGrow.Voucher.API.Reconciliation.Domain.Providers
+namespace Beis.HelpToGrow.Voucher.Api.Reconciliation.Domain.Providers
 {
     public interface IContactsRepository
     {
