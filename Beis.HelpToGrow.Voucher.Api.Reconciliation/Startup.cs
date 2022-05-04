@@ -60,7 +60,7 @@ namespace Beis.HelpToGrow.Voucher.API.Reconciliation
 
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "beis-htg-sme-voucher-reconciliation-service", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "htg-sme-voucher-reconciliation-service", Version = "v1" });
                 var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
                 var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
                 c.IncludeXmlComments(xmlPath);
