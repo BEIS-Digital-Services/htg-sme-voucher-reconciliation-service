@@ -2,16 +2,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: beis-htg-sme-voucher-chek-service
+  name: Beis.HelpToGrow.Voucher.API.Reconciliation
 spec:
   replicas: 1
   template:
     metadata:
       labels:
-        app: beis-htg-sme-voucher-chek-service
+        app: Beis.HelpToGrow.Voucher.API.Reconciliation
     spec:
       containers:
-        - name: beis-htg-sme-voucher-chek-service
+        - name: Beis.HelpToGrow.Voucher.API.Reconciliation
           image: proxytechnology/mymicroservice:latest
           ports:
             - containerPort: 80
@@ -20,15 +20,15 @@ spec:
               value: http://*:80  
   selector:
     matchLabels:
-      app: beis-htg-sme-voucher-chek-service
+      app: Beis.HelpToGrow.Voucher.API.Reconciliation
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: beis-htg-sme-voucher-chek-service
+  name: Beis.HelpToGrow.Voucher.API.Reconciliation
 spec:
   type: LoadBalancer
   ports:
     - port: 80
   selector:
-    app: beis-htg-sme-voucher-chek-service   
+    app: Beis.HelpToGrow.Voucher.API.Reconciliation   
